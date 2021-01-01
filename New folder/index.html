@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CSS Grid Navigation Bar</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<header>
+			<!-- Main Top Menu -->
+			<nav>
+				<div id="top-line"></div>
+
+				<div id="navbar">
+					<div id="logo">
+						<div class="logo">
+							<img src="assets/logo.png" alt="">
+						</div>
+					</div>
+					<div id="links">
+						<a href="">Pocetna</a>
+						<a href="">O nama</a>
+						<a href="">Proizvod</a>
+						<a href="">Kontakt</a>
+					</div>
+					<script type="text/javascript" src="functions.js"></script>
+					
+					<div class="mobile-btn">
+						<a id="menu-btn" onclick="myFunction()" class="fa fa-bars fa-2x">
+							<span class="material-icons">
+								menu
+							</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<!-- Mobile Menu -->
+			<div id="mobile-menu" class="mobile-menu" style="visibility: hidden;">
+				<ul class="mobile-links">
+					<li class="nav-list"><a href="#">Home</a></li>
+					<li class="nav-list"><a href="#">Gallery</a></li>
+					<li class="nav-list"><a href="#">Blog</a></li>
+					<li class="nav-list"><a href="#">Portfolio</a></li>
+					<li class="nav-list"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<div style="margin-top: 300px;">
+			<span class="fas fa-camera"></span>
+		</div>
+	</body>
+</html>

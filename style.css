@@ -40,12 +40,6 @@ nav {
     }
 } */
 
-@media screen and (max-height: 823px) {
-    .logo {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .line {
         width: 30px;
@@ -67,8 +61,8 @@ nav {
     .logo {
         display: inline-block;
         margin-top: 10%;
-        height: 50%;
-        width: auto;
+        height: auto;
+        width: 150px;
         border: 3px solid #bc9d66;
         border-radius: 5px;
     }

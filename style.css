@@ -30,6 +30,10 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.menu-logo {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -70,6 +74,14 @@ nav {
     .mobile-logo span {
         color: #bc9d66;
     }
+    .menu-logo {
+        display: flex;
+        margin-top: 10%;
+        height: auto;
+        width: 250px;
+        border: 3px solid #bc9d66;
+        border-radius: 5px;
+    }
     .desktop-logo {
         display: none;
     }
@@ -89,14 +101,6 @@ nav {
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
-    }
-    .logo {
-        display: inline-block;
-        margin-top: 10%;
-        height: auto;
-        width: 250px;
-        border: 3px solid #bc9d66;
-        border-radius: 5px;
     }
     .nav-links {
         position: fixed;

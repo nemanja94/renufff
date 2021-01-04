@@ -79,8 +79,8 @@ nav {
     .menu-logo {
         display: flex;
         margin-top: 10%;
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
         border: 3px solid #bc9d66;
         border-radius: 5px;
     }

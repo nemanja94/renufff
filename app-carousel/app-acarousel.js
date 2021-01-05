@@ -3,9 +3,9 @@ template.innerHTML = `
 <style>
     section {
         padding: 0;
-        margin: 20px 0 0 -45%;
+        margin: 35px 0 0 -37%;
         position: absolute;
-        width: 90%;
+        width: 75%;
         height: 50vh;
         display: flex;
         border: 5px solid #bc9d66;
@@ -69,11 +69,14 @@ template.innerHTML = `
 
     @media screen and (max-width: 768px) {
         section {
-            margin: -60px 0 0 -45%;
-            width: 87.5%;
+            margin: -120px 0 0 -50%;
+            width: 100%;
             flex-direction: column;
-            height: 70vh;
-            border: 4px solid #bc9d66;
+            height: 60vh;
+            border-top: 4px solid #bc9d66;
+            border-bottom: 4px solid #bc9d66;
+            border-right: none;
+            border-left: none;
             border-radius: 3px;
         }
 

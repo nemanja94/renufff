@@ -92,14 +92,15 @@ nav {
 .carousel {
     margin: 120px 0 0 0;
     padding: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
 
 /* Contact conf */
 .contact {
-    display: none;
+    margin: 220px 0 0 5%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     justify-content: center;

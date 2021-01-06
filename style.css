@@ -9,9 +9,28 @@ body {
     background-color: whitesmoke;
 }
 
+/* Footer */
+
+.wraper {
+    min-height: calc(100vh - 50px);
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: #161616;
+    border-top: solid 3px #bc9d66;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 /* Navbar */
 
 nav {
+    margin: 0;
     display: flex;
     height: 10vh;
     background: #161616;
@@ -78,6 +97,15 @@ nav {
     align-items: center;
 }
 
+/* Contact conf */
+.contact {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile conf */
 @media screen and (max-width: 768px) {
     .mobile-logo {
         display: flex;

@@ -9,31 +9,38 @@
 </head>
 
 <body>
-  <div class="top-line"></div>
-  <nav>
-    <h2 class="mobile-logo">REN<span>ufff</span></h2>
-    <img src="images/logo.png" alt="logo" class="desktop-logo">
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
+  <div class="wraper">
+    <div class="top-line"></div>
+    <nav>
+      <h2 class="mobile-logo">REN<span>ufff</span></h2>
+      <img src="images/logo.png" alt="logo" class="desktop-logo">
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">
+            <img src="images/logo.png" alt="logo" class="menu-logo">
+          </a></li>
+        <li><a href="#oNama">O nama</a></li>
+        <li><a href="#proizvod">Proizvod</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="carousel">
+      <app-carousel></app-carousel>
     </div>
-    <ul class="nav-links">
-      <li><a href="#">
-          <img src="images/logo.png" alt="logo" class="menu-logo">
-        </a></li>
-      <li><a href="#">O nama</a></li>
-      <li><a href="#">Proizvod</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
-  </nav>
+    <div class="contact">
+      <app-contact></app-contact>
+    </div>
 
-  <div class="carousel">
-    <app-carousel></app-carousel>
   </div>
-
+  <footer class="footer"></footer>
   <script src="app.js"></script>
-  <script src="app-carousel/app-acarousel.js"></script>
+  <script src="components/app-acarousel.js"></script>
+  <script src="components/app-contact.js"></script>
 </body>
 
 </html>

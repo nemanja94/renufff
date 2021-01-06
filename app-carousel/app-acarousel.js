@@ -30,8 +30,7 @@ template.innerHTML = `
     }
 
     section .slide:nth-child(1) {
-        background-image: url('../images/1.jpg');
-        background-position: center center;
+        background-color: #161616;
     }
 
     section .slide:nth-child(2) {

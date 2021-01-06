@@ -41,18 +41,21 @@ class Carousel extends HTMLElement {
     }
 
     section .slide:nth-child(1) {
-        background-image: url('../images/1.png');
-        background-position: center center;
+        background-color: #161616;
+        /* background-image: url('../images/1.png');
+        background-position: center center; */
     }
 
     section .slide:nth-child(2) {
-        background-image: url('../images/2.png');
-        background-position: center center;
+        background-color: #161616;
+        /* background-image: url('../images/2.png');
+        background-position: center center; */
     }
 
     section .slide:nth-child(3) {
-        background-image: url('../images/3.png');
-        background-position: center center;
+        background-color: #161616;
+        /* background-image: url('../images/3.png');
+        background-position: center center; */
     }
 
     section .slide .content {

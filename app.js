@@ -9,13 +9,12 @@ const contact = document.querySelector('body > div > nav > ul > li:nth-child(4) 
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     links.forEach(link => {
-        link.classList.toggle('fade');
-    });
-});
-
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
+        if (link.className !== 'fade') {
+            link.classList.toggle('fade');
+            link.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        } 
     });
 });
 

@@ -153,7 +153,7 @@ nav {
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 0.7s ease-out;
         pointer-events: none;
     }
     .nav-links.open {

@@ -12,50 +12,60 @@ class AppContact extends HTMLElement {
         <style>
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: stretch;
-            flex-basis: 50vh;
             flex-wrap: wrap;
             height: 50vh;
+            border-radius: 5px;
         }
 
         .left {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            flex-basis: 50vh;
             height: 16vh;
+            padding: 0;
+            border-radius: 5px;
         }
 
         .contact-header {
             display: flex;
             justify-content: space-between;
-            flex-basis: 100%;
             height: 16vh;
-            background-color: #bc9d66;
+            background-color: #161616;
+            border-radius: 5px;
+            padding: 0;
         }
 
         .contact-image {
             display: flex;
             justify-content: flex-start;
-            height: 16vh;
+            height: 15.4vh;
+            border: 3px solid #bc9d66;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
 
         .contact-image img {
-            width: 16vh;
-            height: 16vh;
+            width: 15vh;
+            height: 14vh;
         }
 
         .contact-info {
             display: flex;
-            flex-basis: 27vh;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
+            padding: 5px 50px 5px 30px;
+            border: 3px solid #bc9d66;
+            border-left: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
 
         .contact-info p,
         .contact-info h2 {
+            color: #bc9d66;
             padding: 0;
             margin: 0;
         }
@@ -64,6 +74,11 @@ class AppContact extends HTMLElement {
             display: flex;
             flex-basis: 100%;
             height: 33vh;
+            background-color: #161616;
+            padding: 5px;
+            margin-top: 30px;
+            border: 3px solid #bc9d66;
+            border-radius: 5px;
         }
 
         .contact-form {
@@ -72,6 +87,14 @@ class AppContact extends HTMLElement {
             flex-direction: column;
             flex-basis: 100%;
             margin-top: 10px;
+            border: 
+        }
+
+        .contact-form h1 {
+            align-self: center;
+            padding: 0;
+            margin: 0 0 10px 0;
+            color: #bc9d66;
         }
 
         .top-div {
@@ -85,6 +108,13 @@ class AppContact extends HTMLElement {
             border-radius: 5px;
             border: none;
             padding: 10px;
+            width: 150px;
+            background-color: #bc9d66;
+            color: #161616;
+        }
+
+        .top-div input::placeholder {
+            color: #161616;
         }
 
         .bottom-div {
@@ -99,6 +129,12 @@ class AppContact extends HTMLElement {
             border-radius: 5px;
             border: none;
             padding: 10px;
+            background-color: #bc9d66;
+            color: #161616;
+        }
+
+        .bottom-div input::placeholder {
+            color: #161616;
         }
 
         .bottom-div textarea {
@@ -106,6 +142,12 @@ class AppContact extends HTMLElement {
             border-radius: 5px;
             border: none;
             padding: 10px;
+            background-color: #bc9d66;
+            color: #161616;
+        }
+
+        .bottom-div textarea::placeholder {
+            color: #161616;
         }
 
         .right {
@@ -119,10 +161,13 @@ class AppContact extends HTMLElement {
             display: flex;
             justify-content: center;
             align-content: center;
+            width: 45vh;
             padding: 5px;
             height: 5vh;
             background-color: #161616;
             color: #bc9d66;
+            border: 3px solid #bc9d66;
+            border-bottom: 0;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
@@ -132,8 +177,10 @@ class AppContact extends HTMLElement {
         }
         .location-map iframe {
             display: flex;
-            width: 100%;
-            height: 415px;
+            width: 46vh;
+            height: 450px;
+            border: 3px solid #161616;
+            border-top: none;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
         }
@@ -152,6 +199,7 @@ class AppContact extends HTMLElement {
             </div>
             <div class="contact-form-div">
                 <form class="contact-form">
+                    <h1>Kontaktirajte nas</h2>
                     <div class="top-div">
                         <input type="text" id="firstName" placeholder="Vase ime">
                         <input type="text" id="lastName" placeholder="Vase prezime">
@@ -170,7 +218,7 @@ class AppContact extends HTMLElement {
             <div class="location-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.338736150277!2d20.27719211552437!3d44.46722897910178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a046ca1fa775d%3A0x14a09f53d44e0395!2z0KDQsNGG0LUg0KLQtdGA0LfQuNGb0LAsINCS0LXQu9C40LrQuCDQptGA0ZnQtdC90Lg!5e0!3m2!1ssr!2srs!4v1610200198969!5m2!1ssr!2srs"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </div>
